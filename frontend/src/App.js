@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import '../node_modules/react-toastify/dist/ReactToastify.min.css'
+// import 'react-toastify/dist/ReactTostify.min.js'
 
 import Header from './components/Header';
 import Dashboard from './pages/Dashboard';
@@ -18,6 +21,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <ToastContainer />
     </>
   );
 }
